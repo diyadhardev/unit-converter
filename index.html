@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unit Converter</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="main-section">
+      <div class="subsection units-subsection">
+        <h3>Unit Converter</h3>
+        <div class="units-section">
+          <div class="unit-categories">
+            <button class="tab-button active">Length</button>
+            <button class="tab-button">Weight</button>
+            <button class="tab-button">Temperature</button>
+          </div>
+          <div class="input-sections">
+            <div class="input-subsection">
+              <label for="numberValue">Enter the length to convert</label>
+              <input
+                type="number"
+                name="numberValue"
+                id="numberValue"
+                step="1"
+                class="user-input"
+              />
+            </div>
+            <div class="input-subsection">
+              <label for="from">Unit to convert from</label>
+              <select name="from-units" id="from" class="user-input">
+                <option value="default"></option>
+              </select>
+            </div>
+            <div class="input-subsection">
+              <label for="to">Unit to convert to</label>
+              <select name="to-units" id="to" class="user-input">
+                <option value="default"></option>
+              </select>
+            </div>
+            <button id="convert">Convert</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="result-section subsection">
+        <div class="result-subsection">
+          <h3>Result of your calculation</h3>
+          <div class="result-display"></div>
+          <button id="reset-btn">Reset</button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="app.js"></script>
+</html>

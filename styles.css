@@ -1,0 +1,86 @@
+body {
+  background-color: rgb(245, 245, 245);
+  box-shadow: 4px;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  height: 80vh;
+}
+
+h3 {
+  margin-left: 8px;
+}
+.main-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  height: 100%;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 10px;
+  gap: 2rem;
+  padding: 20px;
+}
+.subsection {
+  border: 2px solid black;
+  border-radius: 1em;
+  min-width: 80%;
+}
+
+.units-section {
+  margin-left: 8px;
+}
+button {
+  border: none;
+  border-radius: 4px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.active {
+  border-bottom: 2px solid rgb(129, 188, 213);
+}
+.input-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+
+  padding: 2px 2px 2px 2px;
+  margin: 2px auto;
+}
+.input-subsection {
+  display: flex;
+  flex-direction: column;
+}
+.user-input {
+  width: 80%;
+  height: 35px;
+  cursor: pointer;
+  border: 2px solid black;
+  border-radius: 4px;
+}
+#convert,
+#reset-btn {
+  width: 80px;
+  border: 2px solid black;
+  height: 35px;
+  border-radius: 4px;
+}
+#convert:hover,
+#reset-btn:hover {
+  background-color: black;
+  color: white;
+}
+
+.result-section {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 18px;
+  width: 40%;
+}
+.result-display {
+}
+.result-subsection {
+  margin-left: 8px;
+}
